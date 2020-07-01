@@ -1,0 +1,849 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(hector-martinez-635780-unsplash.jpg);
+    background-size: 1500px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+    
+
+#topo{
+    background-color:white;
+    border-bottom-style: solid;
+    border-bottom-color: darkorange;  
+    height: 55px;
+}
+
+
+#fav{
+      margin-top: 15;
+    color: #666666;
+    font-size: 16;
+    margin-left: 10px
+}
+
+
+
+.dropdown-content1 {
+     display: none;
+    position: absolute;
+    background-color: indianred;
+    color: white;
+    width: 200;
+    height: auto;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#favHover{
+    width: 100px;
+    margin-right: 130px;
+    float: right;
+
+}
+
+#favHover:hover .dropdown-content1 {
+    display: block;
+    background-color: indianred;
+}
+
+#favHover:hover{
+    background-color: indianred ;
+}
+
+#favHover:hover #fav{
+    color:white;
+}
+
+#favHover2{
+    width: 100px;
+    margin-right:50px;
+    float: right;
+    
+}
+
+
+#hist{
+    margin-top: 15;
+    color: #666666;
+    font-size: 16;
+    margin-left: 10px
+}
+
+#btnhist{
+    width: 90%;
+    background-color: limegreen;
+    color: white;
+    border: none;
+}
+
+#btnfav2{
+    width: 90%;
+    background-color: indianred;
+    color: white;
+    border: none;   
+}
+
+#Favoritos{
+   background-color: indianred;
+    color: white;
+    width: 100%;
+     height: 90px  
+}
+
+#Favoritos:hover{
+     background-color: white;
+    color: indianred ;
+      text-align: center;
+}
+#Historico{
+   border-radius: 2px;
+   height: 90px;
+}
+
+#Historico:hover{
+    background-color: white;
+    color: limegreen;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: limegreen;
+    color: white;
+    width: 200;
+    height: auto;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+#Favhover2:hover .dropdown-content {
+    display: block;
+    background-color: limegreen;
+}
+
+#Favhover2:hover{
+    background-color: limegreen;
+}
+
+#Favhover2:hover #hist{
+    color:white;
+}
+
+#cont{
+    margin-top: 60px;
+    max-height: 100%;
+    height: 608px;
+    text-align: center;
+    margin-bottom: 100px;
+   
+}
+
+#contL{
+    float: left;
+    color: white;
+    font-size: 25;
+    margin-left: 60;
+    margin-top: 30;
+}
+
+#btnLogin{   
+    background-color: orange;
+    color: white;
+    font-size:20px;
+    font-family: Alcubierre;
+    padding: 15px 50px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 768px
+}
+
+#btnLogin:hover{
+    background-color: darkorange;
+    color: white;
+}
+
+#btnCL{
+     background-color: orange;
+    color: white;
+    font-size:20px;
+    font-family: Alcubierre;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#btnCL:hover{
+    background-color: darkorange;
+    color: white;
+}
+
+
+#text{
+    color: white;
+    margin-top: 90px;
+    font-size: 60;
+    font-family: Alcubierre;
+}
+
+#text{color: white; text-shadow: black 0.1em 0.1em 0.50em}
+
+#btnBusca{   
+    background-color:orange;
+    color: white;
+    font-size:30px;
+    font-family: Alcubierre; 
+    padding: 8px 40px;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-top: 3% ;
+    text-decoration:none;
+        
+}
+
+
+#btnBusca:hover{
+   background-color: darkorange;
+    color: white;
+}
+
+input[type=text], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin-left:10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+input[type=password], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin-left:10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=email], select {
+    width: 95%;
+    padding: 12px 20px;
+    margin-left:10px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
+
+#formlogin{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 270px; 
+    font-family: Alcubierre;
+    width: 600px;
+}
+
+#formPerfil{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 520px; 
+    font-family: Alcubierre;
+    width: 1200px;
+}
+
+#formCadastra{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 450px; 
+    font-family: Alcubierre;
+    width: 600px;
+}
+
+#formCadastraImob{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 450px; 
+    font-family: Alcubierre;
+    width: 600px;
+}
+
+#containerlogin{
+    margin-top: 100px;
+}
+
+#containerCadastra{
+    margin-top: 50px;
+}
+
+#btnEntra{   
+    background-color: orange;
+    color: white;
+    font-size: 22;
+    font-family: Alcubierre;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: left;
+    margin-left: 25px; 
+}
+
+#btnConfirma{   
+    background-color: orange;
+    color: white;
+    font-size: 22;
+    font-family: Alcubierre;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: left;
+    margin-left: 25px; 
+}
+
+#btnCadastra{   
+    background-color: royalblue;
+    color: white;
+    font-size: 22;
+    font-family:Alcubierre;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: right;
+    margin-right: 15px;  
+}
+
+#contLogin{
+    height: 612px;
+}
+
+#contCadastra{
+    height: 800px
+}
+
+
+#destaques{
+    text-align: center;
+    font-family:  Alcubierre;
+    background-color: white;
+    padding-top: 10px;
+}
+
+#Obj{
+    text-align: center;
+    font-family: Alcubierre;
+    background-color: orange;
+    color: white;
+    height: 300px;
+}
+
+#Anuncie{
+    height: 200px;
+    color: black;
+    background-color: white;
+    max-width: 100%;
+    width: 100%
+}
+
+#linha{
+    border-bottom: solid;
+    border-color: orange;
+}
+
+#slides{
+    height: 700px
+}
+
+#labelDest{
+    border-bottom: solid;
+    margin-bottom: 50px;
+    border-color: orange;
+    margin-left: 300px;
+    margin-right: 300px;
+    margin-top: 0px;
+}
+
+
+.card{
+  width: 25em;
+  height:350px;
+  background:#fff;
+  float:left;
+  margin-right:10px;
+  margin-bottom:50px;
+  cursor:pointer;
+  transform: scale(1);
+  visibility:visible;
+  -moz-box-shadow: 0px 1px 5px 0px #676767;
+  -webkit-box-shadow: 0px 1px 5px 0px #676767;
+  box-shadow: 0px 1px 5px 0px #676767;
+  
+}
+
+.card:hover{
+  cursor:pointer;
+  transform: scale(1);
+  visibility:visible;
+  transition: all .2s ease-in-out;
+  transform: scale(1.1); 
+  z-index:100;
+  position:relative;
+  transition-timing-function:cubic-bezier(0.5, 0, 0.1, 1);
+  transition-duration:400ms; 
+}
+
+#combos{
+   margin-top: 100px
+}
+
+#tipo{
+    width: 300px;
+    font-family:Alcubierre;
+    font-size:19px;
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+
+#tipoF{
+    width: 220px;
+    font-family: Alcubierre;
+    font-size:19px;
+    color: grey;
+    border: none
+
+}
+
+
+#cidade{
+    width: 300px;
+    font-family:Alcubierre;
+    font-size: 19px;
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+
+#cidadeF{
+    width: 220px;
+    font-family: Alcubierre;
+    font-size:19px;
+    color: grey;
+    border: none
+
+}
+
+#bairro{
+    width: 300px;
+    font-family:Alcubierre;
+    font-size: 19px;  
+    background-color: transparent;
+    color: white;
+    border-width: 2px;
+    border-color: white;
+    text-shadow: black 0.1em 0.1em 0.3em;
+}
+
+#bairroF{
+    width: 220px;
+    font-family: Alcubierre;
+    font-size:19px;
+    color: grey;
+    border: none
+
+}
+
+#copy{
+    color: black
+}
+
+.card-product .img-wrap {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+    position: relative;
+    height: 220px;
+    text-align: center;
+}
+.card-product .img-wrap img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+.card-product .info-wrap {
+    overflow: hidden;
+    padding: 15px;
+    border-top: 1px solid #eee;
+}
+
+.label-rating { margin-right:10px;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* carousel */
+#quote-carousel 
+{
+  padding: 0 10px 30px 10px;
+  margin-top: 30px;
+}
+
+/* Control buttons  */
+#quote-carousel .carousel-control
+{
+  background: none;
+  color: #222;
+  font-size: 2.3em;
+  text-shadow: none;
+  margin-top: 30px;
+}
+/* Previous button  */
+#quote-carousel .carousel-control.left 
+{
+  left: -12px;
+}
+/* Next button  */
+#quote-carousel .carousel-control.right 
+{
+  right: -12px !important;
+}
+/* Changes the position of the indicators */
+#quote-carousel .carousel-indicators 
+{
+  right: 50%;
+  top: auto;
+  bottom: 0px;
+  margin-right: -19px;
+}
+/* Changes the color of the indicators */
+#quote-carousel .carousel-indicators li 
+{
+  background: #c0c0c0;
+}
+#quote-carousel .carousel-indicators .active 
+{
+  background: #333333;
+}
+#quote-carousel img
+{
+  width: 250px;
+  height: 100px
+}
+/* End carousel */
+
+.item blockquote {
+    border-left: none; 
+    margin: 0;
+}
+
+.item blockquote img {
+    margin-bottom: 10px;
+}
+
+.item blockquote p:before {
+    content: "\f10d";
+    font-family: 'Fontawesome';
+    float: left;
+    margin-right: 10px;
+}
+
+
+
+/**
+  MEDIA QUERIES
+*/
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) { 
+    #quote-carousel 
+    {
+      margin-bottom: 0;
+      padding: 0 40px 30px 40px;
+    }
+    
+}
+
+/* Small devices (tablets, up to 768px) */
+@media (max-width: 768px) { 
+    
+    /* Make the indicators larger for easier clicking with fingers/thumb on mobile */
+    
+    #quote-carousel .carousel-indicators {
+        bottom: -20px !important;  
+    }
+    #quote-carousel .carousel-indicators li {
+        display: inline-block;
+        margin: 0px 5px;
+        width: 15px;
+        height: 15px;
+    }
+    #quote-carousel .carousel-indicators li.active {
+        margin: 0px 5px;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+#anunciar{
+    width: 200px;
+    margin-left: 5px;
+    margin-right: 0
+}
+    
+#imobi{
+    width: 10px;
+    margin-right: 780px;
+    margin-left: 0px;
+}
+
+@media screen and (max-width: 768px) {
+    #favHover{
+        visibility: hidden;
+        float: left;
+    }
+    
+     #favHover2{
+        visibility: hidden;
+        float: right
+    } 
+    
+    #tipo{
+      visibility: hidden; 
+    }
+    
+    #cidade{
+      visibility: hidden; 
+    }
+    
+    #bairro{
+       visibility: hidden;
+    }
+    
+    #btnlogin{
+        margin:auto; 
+    }
+    
+    #cont{
+        margin-bottom: 100px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+    #tipo{
+      visibility: hidden; 
+    }
+    
+    #cidade{
+      visibility: hidden; 
+    }
+    
+    #bairro{
+       visibility: hidden;
+    }
+    
+     #links-menu{
+        text-align: center;
+    }
+}
+
+body {
+    color: #888;   
+}
+a {
+    color: #03a1d1;
+    text-decoration: none!important;
+}
+
+/**** LAYOUT ****/
+.list-inline>li {
+    padding: 0 10px 0 0;
+}
+.container-pad {
+    padding: 30px 15px;
+}
+
+
+/**** MODULE ****/
+.bgc-fff {
+    background-color: #fff!important;
+}
+.box-shad {
+    -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+.brdr {
+    border: 1px solid #ededed;
+}
+
+/* Font changes */
+.fnt-smaller {
+    font-size: .9em;
+}
+.fnt-lighter {
+    color: #bbb;
+}
+
+/* Padding - Margins */
+.pad-10 {
+    padding: 10px!important;
+}
+.mrg-0 {
+    margin: 0!important;
+}
+.btm-mrg-10 {
+    margin-bottom: 10px!important;
+}
+.btm-mrg-20 {
+    margin-bottom: 20px!important;
+}
+
+/* Color  */
+.clr-535353 {
+    color: #535353;
+}
+
+
+
+
+/**** MEDIA QUERIES ****/
+@media only screen and (max-width: 991px) {
+    #property-listings .property-listing {
+        padding: 5px!important;
+    }
+    #property-listings .property-listing a {
+        margin: 0;
+    }
+    #property-listings .property-listing .media-body {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #property-listings .property-listing img {
+        max-width: 180px;
+    }
+    
+   
+}
+
+#frmCL{
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Alcubierre;
+    border-top-left-radius: 0px;
+
+
+}
+
+#frmTipo{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+     height: 230px; 
+    font-family: Alcubierre;
+     width:100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#frmCidade{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+    height: 230px; 
+    font-family: Alcubierre;
+    width: 100%;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+#frmBairro{
+    background-color: white;
+    padding: 10px 20px;
+    text-align: center;
+     height: 230px;  
+    font-family: Alcubierre;
+    width: 100%;
+     margin-top: 10px;
+    border-radius: 5px;
+}
+
+#divPainel{
+    margin-bottom: 200px
+}
+
+#btnEnvia{   
+    background-color: orange;
+    color: white;
+    font-size: 18;
+    font-family:Alcubierre;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+   
+}
+
+#btnlogout{   
+    background-color: indianred;
+    color: white;
+    font-size: 22;
+    font-family: Alcubierre;
+    padding: 12px 35px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    float: right;
+    margin-right: 10px;
+}
+
+#btnRow{   
+    background-color: indianred;
+    color: white;
+    font-size: 22;
+    font-family: Alcubierre;
+    padding: 12px 5px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+
+#txtRow{
+    width: 80%;
+}
+
+#CadImovel{
+background-color: white;
+padding: 10px 20px;
+text-align: center;
+height: 750px; 
+font-family: Alcubierre;
+margin-top: 35px;
+margin-right: ;  
+}

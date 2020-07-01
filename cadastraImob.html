@@ -1,0 +1,75 @@
+<head>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="js/jquery-1.2.6.pack.js" type="text/javascript"></script><script src="js/jquery.maskedinput-1.1.4.pack.js" type="text/javascript"></script>
+</head>  
+
+ <div id="containerCadastra" class="container-fluid">   
+        <div class="row">
+            <div id="contCadastra" class="span12" style="text-align:center; margin: 0 auto;">
+
+                <ul class="nav nav-tabs">
+                    <li class="active"><a onclick="abrepagina('cadastra.html')">Cadastre-se como usuário</a></li>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a onclick="abrepagina('cadastraImob.html')">Cadastre-se como imobiliária</a></li>
+                </ul>
+                    </ul>
+                
+                <form id="formCadastraImob" method="post" action="cadastra_Imob.php">
+                <h1>Cadastre sua imobiliaria</h1>
+                <input type="text" name="nomeImob" placeholder="Digite seu nome" required>
+                <input type="password" name="senhaImob" placeholder="Digite sua senha" required><br>
+                <input type="email" name="emailImob" placeholder="Digite seu email" required><br><br>
+                <input type="text" id="cpf_cnpj" class="cpf_cnpj" name="cpf_cnpj" placeholder="Digite CNPJ da sua empresa" maxlength="19" required>
+        
+        <script type="text/javascript">// <![CDATA[
+        function str_replace(busca,subs,valor){
+            var ret=valor;
+            var pos=ret.indexOf(busca);
+            while(pos!=-1){
+                ret=ret.substring(0,pos)+subs+ret.substring(pos+busca.length,ret.length);
+                pos=ret.indexOf(busca);
+            }
+            return ret;
+        }
+ 
+       function mascara(valor,masc){
+           var res=valor,mas=str_replace("?","",str_replace("9","",masc));
+        for(var i=0;i<mas.length;i++){
+        res=str_replace(mas.charAt(i),"",res);
+        mas=str_replace(mas.charAt(i),"",mas);
+    }
+    
+           var ret="";
+        for(var i=0;i<masc.length&&res!="";i++){ switch(masc.charAt(i)){ case"?": ret+=res.charAt(0); res=res.substring(1,res.length); break; case"9": while(res!=""&&(res.charCodeAt(0)>57||res.charCodeAt(0)<48))res=res.substring(1,res.length);
+                if(res!=""){
+                    ret+=res.charAt(0);
+                    res=res.substring(1,res.length);
+                }
+                break;
+            default:
+                ret+=masc.charAt(i);
+        }
+    }
+    return ret;
+}
+ 
+        $(document).ready(function(){ 
+        $("#cpf_cnpj").keyup(function(){
+     
+            if($(this).val().length <= 14) 
+                $(this).val( mascara($(this).val(), '999.999.999-99') ); 
+            else
+                $(this).val( mascara($(this).val(), '999.999.999/9999-99') ); 
+                 
+        })
+         
+    });            </script>
+                <button id="btnConfirma">Confirmar</button>
+                <button onclick="abrepagina('login.html')" id="btnCadastra">Voltar</button>
+                </form>
+                   
+            </div>
+     </div>
+</div>

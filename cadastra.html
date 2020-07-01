@@ -1,0 +1,46 @@
+<html>
+  <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+    
+
+    <div id="containerCadastra" class="container-fluid">   
+        <div class="row">
+            <div id="contCadastra" class="span12" style="text-align:center; margin: 0 auto;">
+                
+                <ul class="nav nav-tabs">
+                    <li class="active"><a onclick="abrepagina('cadastra.html')">Cadastre-se como usuário</a></li>
+                <ul class="nav nav-tabs">
+                    <li class="active"><a onclick="abrepagina('cadastraImob.html')">Cadastre-se como imobiliária</a></li>
+                </ul>
+                    </ul>
+                
+            <form id="formCadastra" method="post" action="cadastraUsuario.php">
+                <h1>Crie sua conta</h1>
+                <input type="text" name="nome" placeholder="Digite seu nome" required>
+                <input type="password" name="senha" placeholder="Digite sua senha" required><br>
+                <input type="email" name="email" placeholder="Digite seu email" required><br><br>
+                <input type="text" class="cpf" name="cpf" id="cpf" placeholder="Digite seu CPF" maxlength="14" onpaste="return false"><br>
+                
+                 <script type="text/javascript">
+	                      $(document).ready(function(){	
+		                  $("#cpf").mask("000.000.000-00");
+	                      });
+                    </script>
+                    
+                <button id="btnConfirma" name="btnConfirma" value="Confirmar">Confirmar</button>
+                <button onclick="abrepagina('login.html')" id="btnCadastra">Voltar</button>
+                
+               
+                </form>
+            </div>
+            </div>
+        </div>
+            
+        
+</html>
